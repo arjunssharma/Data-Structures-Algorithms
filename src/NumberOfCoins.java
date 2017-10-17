@@ -4,7 +4,7 @@
  */
 
 /**
- * @author asharm33
+ * @author arjunssharma1992
  */
 
 public class NumberOfCoins {
