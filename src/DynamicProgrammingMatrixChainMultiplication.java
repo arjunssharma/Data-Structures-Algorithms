@@ -1,4 +1,6 @@
-
+/**
+ * @author arjunssharma1992
+ */
 public class DynamicProgrammingMatrixChainMultiplication {
 
 	static int countOfScalarMultiplications = 0;

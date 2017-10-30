@@ -1,4 +1,6 @@
-
+/**
+ * @author arjunssharma1992
+ */
 public class MemoizedMatrixChainMultiplication {
 
 	static int countOfScalarMultiplications = 0;
