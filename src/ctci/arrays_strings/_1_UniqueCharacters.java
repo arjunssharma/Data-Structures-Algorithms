@@ -6,7 +6,7 @@ public class _1_UniqueCharacters {
 		System.out.println(isUniqueCharacters("arjun"));
 	}
 	
-	//Assuming ASCII String
+	//Assuming ASCII String -- Unicode has 256 Characters
 	public static boolean isUniqueCharacters(String str) {
 		if(str.length() > 128) 
 			return false;
