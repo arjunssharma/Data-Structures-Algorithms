@@ -6,7 +6,11 @@ import java.util.EmptyStackException;
 public class _3_StackOfPlates {
 
 	ArrayList<Stack> stacks = new ArrayList<Stack>();
-	private static final int CAPACITY = 3;
+	private static int CAPACITY;
+	
+	public _3_StackOfPlates(int capacity) {
+		CAPACITY = capacity;
+	}
 	
 	public void push(int x) {
 		Stack last = getLastStack();
@@ -65,7 +69,7 @@ public class _3_StackOfPlates {
 	
 	
 	public static void main(String args[]) {
-		_3_StackOfPlates plates = new _3_StackOfPlates();	
+		_3_StackOfPlates plates = new _3_StackOfPlates(3);	
 		plates.push(5);
 		plates.push(5);
 		plates.push(5);
