@@ -19,6 +19,7 @@ public class _5_SortStack {
 	}
 	
 	public static Stack<Integer> sortStack(Stack<Integer> s) {
+		//stored in descending order
 		Stack<Integer> r = new Stack<Integer>();
 		while (!s.empty()) {
 			int temp = s.pop();
