@@ -2,13 +2,13 @@ package ctci.trees_graphs;
 
 import java.util.LinkedList;
 
-import ctci.trees_graphs.Graph.Node;
-import ctci.trees_graphs.Graph.State;;
+import ctci.trees_graphs.GraphClassForProblem1.Node;
+import ctci.trees_graphs.GraphClassForProblem1.State;;
 
 public class _1_RouteBetweenNodes {
 
 	
-	public boolean search(Graph g, Node start, Node end) {
+	public boolean search(GraphClassForProblem1 g, Node start, Node end) {
 		if(start == end)
 			return true;
 		

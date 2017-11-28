@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 
-public class Graph
+public class GraphClassForProblem1
 {
 
   public class Edge
@@ -71,7 +71,7 @@ public class Graph
 
   private final Map<String, Node> nodes;
 
-  public Graph()
+  public GraphClassForProblem1()
   {
     nodes = new HashMap<>();
   }
