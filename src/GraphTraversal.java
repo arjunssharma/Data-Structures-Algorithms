@@ -27,7 +27,7 @@ public class GraphTraversal {
 			this.neighbours = neighbours;
 		}
 	}
-	
+
 	// Recursive DFS
 	public void dfs(Node node) {
 		System.out.print(node.data + " ");
@@ -40,12 +40,10 @@ public class GraphTraversal {
 			}
 		}
 	}
-	
-	
-	
+
 	private Queue<Node> queue;
-	static ArrayList<Node> nodes=new ArrayList<Node>();
-	
+	static ArrayList<Node> nodes = new ArrayList<Node>();
+
 	public void bfs(Node node) {
 		queue.add(node);
 		node.visited = true;
@@ -60,7 +58,7 @@ public class GraphTraversal {
 					n.visited = true;
 				}
 			}
-
 		}
 	}
+	
 }
