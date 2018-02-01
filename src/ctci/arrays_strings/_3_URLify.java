@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class _3_URLify {
 
 	public static void main(String args[]) {
-		String s = "Mr John Smith     ";
+		String s = "Mr John Smith    ";
 		char str[] = s.toCharArray();
 		replace(str, 13);
 		System.out.println(Arrays.toString(str));
