@@ -15,7 +15,8 @@ public class _6_StringCompression {
 			count++;
 			if(i + 1 >= s.length() || s.charAt(i) != s.charAt(i + 1)) {
 				compress.append(s.charAt(i));
-				compress.append(count);
+				if(count > 1)
+					compress.append(count);
 				count = 0;
 			}
 		}
