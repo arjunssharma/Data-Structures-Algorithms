@@ -5,7 +5,7 @@ public class _5_SumList {
 	public static void main(String args[]) {
 		Node l = new Node(7);
 		l.next = new Node(1);
-		l.next.next = new Node(6);
+		l.next.next = new Node(9);
 	
 		Node r = new Node(5);
 		r.next = new Node(9);
@@ -24,7 +24,7 @@ public class _5_SumList {
 		Node dummyHeader = new Node(0);
 		Node current = dummyHeader;
 		int carry = 0;
-		while(l1 != null || l2 != null) {
+		while(l1 != null || l2 != null || carry != 0) {
 			int a = (l1 != null)? l1.data: 0;
 			int b = (l2 != null)? l2.data: 0;
 			int total = a + b + carry;
@@ -37,9 +37,9 @@ public class _5_SumList {
 				l2 = l2.next;
 		}
 		
-		if(carry > 0) {
-			current.next = new Node(carry);
-		}
+//		if(carry > 0) {
+//			current.next = new Node(carry);
+//		}
 		
 		return dummyHeader.next;
 	}
