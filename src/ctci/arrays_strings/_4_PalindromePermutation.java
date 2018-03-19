@@ -3,12 +3,12 @@ package ctci.arrays_strings;
 public class _4_PalindromePermutation {
 
 	public static void main(String args[]) {
-		System.out.println(canPermutePalindrome("ARJAR"));
+		System.out.println(canPermutePalindrome("ARJJAR"));
 	}
 
 	public static boolean canPermutePalindrome(String str) {
 		// Assuming ASCII
-		char map[] = new char[128];
+		int map[] = new int[128];
 		for (int i = 0; i < str.length(); i++) {
 			map[str.charAt(i)]++;
 		}
