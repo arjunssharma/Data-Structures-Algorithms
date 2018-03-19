@@ -13,7 +13,7 @@ public class _1_UniqueCharacters {
 		
 		boolean character[] = new boolean[128];
 		for(int i=0;i<str.length();i++){
-			char ch = str.charAt(i);
+			int ch = str.charAt(i);
 			if(character[ch]) {
 				return false;
 			}
