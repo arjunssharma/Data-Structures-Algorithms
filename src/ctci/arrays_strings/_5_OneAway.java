@@ -3,12 +3,15 @@ package ctci.arrays_strings;
 public class _5_OneAway {
 
 	public static void main(String args[]) {
-		System.out.println(checkEdit("bale", "kali"));
+		System.out.println(checkEdit("bale", "baaes"));
 	}
 
 	public static boolean checkEdit(String s, String t) {
 		if (s == null || t == null)
 		    return false;
+		
+		if(Math.abs(s.length() - t.length()) > 1)
+			return false;
 		
 		if (s.length() > t.length())
 		    return checkEdit(t, s);
